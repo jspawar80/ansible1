@@ -1,0 +1,6 @@
+ ansible-vault decrypt inventory/instance/inventory1.yml  --vault-password-file=.vault_pass
+  ansible-playbook -i inventory/instance/inventory1.yml roles/run-clean-up/main.yml --diff  --vault-password-file=ANSIBLE_VAULT_PASSWORD  --verbose 
+   ansible-vault encrypt inventory/instance/inventory1.yml  --vault-password-file=ANSIBLE_VAULT_PASSWORD
+  Token-act-automatiom 
+
+
